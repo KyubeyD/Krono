@@ -1,0 +1,179 @@
+.content-cards {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+#content-carga {
+    border-top: 2px solid var(--cinza);
+    padding: 1rem 0;
+    align-items: center;
+}
+
+#content-regra {
+    overflow-y: scroll;
+}
+
+#content-regra::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+#content-regra::-webkit-scrollbar-track {
+    background: var(--cinza); /* Cor do fundo da barra */
+}
+
+#content-regra::-webkit-scrollbar-thumb {
+    background: var(--light-preto); /* Cor do polegar (parte que você arrasta) */
+    border-radius: 5px; /* Arredondamento do polegar */
+}
+
+#content-regra::-webkit-scrollbar-thumb:hover {
+    background: var(--cinza-escuro); /* Cor do polegar quando em hover */
+}
+
+.card {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    -moz-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    width: 350px;
+    height: 70px;
+    border-radius: 2.2rem;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.card.open {
+    height: 300px;
+}
+
+.card .head-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--corPrincipal04);
+    width: 100%;
+    height: 70px;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    color: var(--branco);
+    font-family: var(--fonteTitulo);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card .head-card .icons {
+    display: flex;
+}
+
+.card .body-card {
+    height: 260px;
+    padding: 1rem;
+    font-family: var(--fonteCorpo);
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.actions .view {
+    color: var(--corPrincipal01);
+}
+
+.actions .edit {
+    color: var(--corPrincipal04);
+}
+
+.actions .delete {
+    color: var(--corPrincipal02);
+}
+
+.card .head-card .visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .head-card .visible i {
+    font-size: 24px;
+}
+
+.card .body-card .importante {
+    font-weight: 600;
+}
+
+.card-esc {
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    -moz-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    border-radius: 1rem;
+    width: 250px;
+    height: 300px;
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-carga {
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    -moz-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    border-radius: 5rem;
+    width: 295px;
+    height: 150px;
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-carga .text-carga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--fonteTitulo);
+    color: var(--preto);
+}
+
+.card-esc figure {
+    width: 100px;
+}
+
+.card-esc figure img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.card-esc h3 {
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal01);
+}
+
+.card-esc .btn-card {
+    padding: 1rem;
+    font-size: 15px;
+    font-family: var(--fonteTitulo);
+    font-weight: 500;
+    color: var(--corPrincipal01);
+    border: 2px solid var(--corPrincipal01);
+    border-radius: 1rem;
+    transition: .2s ease-in-out;
+}
+
+.card-esc .btn-card:hover {
+    background: var(--corPrincipal01);
+    color: var(--branco);
+}

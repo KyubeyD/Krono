@@ -1,0 +1,25 @@
+.mensagem {
+    width: 100%;
+    padding: 10px 1rem;
+    border-radius: 1rem;
+    font-family: var(--fonteTitulo);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--branco);   
+    transition: .2s all ease-in-out;
+}
+
+.mensagem #x-msg {
+    font-size: 1.5rem;
+}
+
+.mensagem #x-msg:hover {
+    cursor: pointer;
+}
+
+.sucess {
+    background: var(--sucess);
+    border: 2px solid var(--dark-sucess);
+}

@@ -1,0 +1,152 @@
+.crud {
+    font-family: var(--fonteTitulo);    
+    color: var(--preto);
+    width: 100%;
+    border-collapse: collapse;
+    flex-grow: 0.2;
+}
+
+.head-crud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -0.5rem;
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal01);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cinza);
+}
+
+.head-crud .add-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.head-crud .add-user:hover {
+    cursor: pointer;
+}
+
+.head-crud .add-user span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--corPrincipal01);
+}
+
+.head-crud .add-user span:hover {
+    text-decoration: underline;
+}
+
+.head-crud .add-user i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--corPrincipal01);
+    border-radius: 50%;
+    color: var(--corPrincipal01);
+}
+
+.foto_usu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.crud .campos {
+    font-weight: 600;
+    opacity: 30%;
+}
+
+/* Adicione este estilo ao seu CSS */
+
+.btn-crud {
+    text-align: center;
+    font-size: 1.6rem;
+    transition: color 0.2s ease-in-out; /* Adiciona transição suave */
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.controle .view {
+    color: var(--corPrincipal01);
+}
+
+.controle .edit {
+    color: var(--corPrincipal04);
+}
+
+.controle .delete {
+    color: var(--corPrincipal02);
+}
+
+/* Mantenha o hover para todos os botões */
+
+.view:hover {
+    color: var(--hover-corPrincipal01);
+}
+
+.edit:hover {
+    color: var(--hover-corPrincipal04);
+}
+
+.delete:hover {
+    color: var(--hover-corPrincipal02);
+}
+
+.controle .ativa {
+    color: var(--sucess);
+}
+
+.btn-next {
+    padding: 1rem 4rem;
+    background: var(--corPrincipal01);
+    color: var(--branco); 
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.btn-next:hover {
+    background: var(--hover-corPrincipal01);
+}
+
+.paginacao, .btn-next {
+    position: fixed;
+    bottom: 4rem;
+    right: 3.1rem;
+    font-family: var(--fonteTitulo);
+}
+
+
+.btn-paginacao {
+    padding: 1rem 2rem;
+    border: 2px solid var(--light-preto);
+    border-radius: 1.2rem;
+    font-weight: 500;
+    color: var(--corPrincipal01);
+    transition: .2s ease-in-out;
+}
+
+.btn-paginacao:hover {
+    background: var(--cinza);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--fff);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: var(--branco);
+  }
+
+.btn-make {
+    border-radius: 1rem;
+    color: var(--corPrincipal01);
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.btn-make:hover {
+    text-decoration: underline;
+}

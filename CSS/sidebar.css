@@ -1,0 +1,139 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.9rem;
+}
+
+.sidebar nav .link-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar nav .link-logo .logo {
+    width: 225px;
+}
+
+.sidebar nav .link-logo .logo img {
+    width: 100%;
+}
+
+.sidebar nav .link-logo .side-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-item {
+    width: 210px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--fonteTitulo);
+    transition: .2s ease-in-out;
+    border-radius: 2rem;
+    font-weight: 500;
+}
+
+.side-item:hover {
+    background: var(--cinza);
+}
+
+
+.side-item a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--corPrincipal01);
+}
+
+.side-item a i {
+    font-size: 1.2rem;
+}
+
+.side-item .sub-side-item {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.side-item .sub-side-item a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+#arrowBtn {
+    font-size: 20px;
+}
+
+.sidebar-toggle {
+    color: var(--corPrincipal01);
+    font-size: 1rem;
+    font-family: var(--fonteTitulo);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sidebar-toggle i {
+    font-size: 1.2rem;
+}
+
+.sidebar-toggle span {
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sub-side {
+    max-height: 0; /* Esconde o submenu */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Transição suave na altura */
+    list-style-type: none;
+    padding: 0;
+}
+
+.sub-side.open {
+    max-height: 500px; /* Altura máxima suficiente para mostrar o conteúdo */
+}
+
+.sidebar-toggle i#arrowBtn {
+    transition: transform 0.5s ease; /* Animação para a seta */
+}
+
+.sidebar-toggle.active i#arrowBtn {
+    transform: rotate(180deg); /* Rotação de 180 graus quando a lista está aberta */
+}

@@ -1,0 +1,184 @@
+        /* Estilos para o modal */
+        .modal {
+            font-family: var(--fonteCorpo);
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: rgba(0, 0, 0, 0.6); 
+            animation: fadeIn 0.5s ease-out; /* Animação de fade-in */
+        }
+
+        .modal-content {
+            background-color: var(--branco);
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            margin: 10% auto; 
+            padding: 30px;
+            width: 90%; 
+            max-width: 500px; /* Largura máxima para dispositivos maiores */
+            animation: slideDown 0.5s ease-out; /* Animação de deslizar para baixo */
+        }  
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Animação de deslizar para baixo */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .foto-view {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .form-modal {
+            width: 100%;
+            border-top: 1px solid var(--light-preto);
+            overflow-y: scroll;
+            padding: 1rem;
+        }
+
+        #formCriarGrade {
+            height: 450px;
+        }
+
+        #formVincProf, #formGrade {
+            height: 120px;
+        }
+
+        .form-modal:-webkit-scrollbar {
+            width: 5px!important; /* Largura da barra de rolagem */
+        }
+
+        .modal-title {
+            margin-bottom: 20px;
+            font-weight: 600; /* Peso da fonte para o título */
+            color: var(--corPrincipal01); /* Cor do título */
+        }
+
+        .campo {
+            margin-bottom: 15px; /* Espaçamento entre os campos */
+        }
+
+        .modal-label {
+            display: block; /* Para que os rótulos ocupem toda a largura */
+            margin-bottom: 5px; /* Espaçamento entre o rótulo e o input */
+            color: var(--cinza-escuro); /* Cor do rótulo */
+            font-weight: 500; /* Peso do rótulo */
+        }
+
+        .checkbox-modal {
+            overflow-y: scroll;
+            height: 150px;
+            border-bottom: 2px solid var(--cinza);
+        }
+
+        .checkbox-modal::-webkit-scrollbar {
+            width: 5px; /* Largura da barra de rolagem */
+        }
+        
+        .checkbox-modal::-webkit-scrollbar-track {
+            background: var(--cinza); /* Cor do fundo da barra */
+        }
+        
+        .checkbox-modal::-webkit-scrollbar-thumb {
+            background: var(--light-preto); /* Cor do polegar (parte que você arrasta) */
+            border-radius: 5px; /* Arredondamento do polegar */
+        }
+        
+        .checkbox-modal::-webkit-scrollbar-thumb:hover {
+            background: var(--cinza-escuro); /* Cor do polegar quando em hover */
+        }
+
+        .checkbox-modal .campo {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            gap: 0.5rem;
+        }
+
+        .checkbox-modal .campo .checkbox {
+            width: 15px;
+            height: 15px;
+        }
+
+        .modal-form {
+            width: 100%;
+            height: 80%;/* Largura total */
+            padding: 0.5rem 1rem; /* Espaçamento interno */
+            border: 1px solid #ccc; /* Borda padrão */
+            border-radius: 1rem; /* Bordas arredondadas */
+            font-size: 18px; /* Tamanho da fonte */
+            box-sizing: border-box; /* Inclui padding e border no total */
+            font-family: var(--fonteCorpo);
+        }
+
+        #descricao {
+            height: 150px;
+        }
+
+        .campo.dois {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .campo.dois .modal-label {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .campo.dois .modal-form {
+            width: 42%;
+        }
+
+        .btn-modal {
+            background-color: var(--corPrincipal04); /* Cor de fundo do botão */
+            color: var(--branco); /* Cor do texto do botão */
+            border: none; /* Sem borda */
+            padding: 10px 15px; /* Espaçamento interno do botão */
+            border-radius: 1rem; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor em forma de ponteiro */
+            font-size: 18px; /* Tamanho da fonte do botão */
+            font-weight: 500; /* Peso do texto do botão */
+            width: 100%;
+            font-family: var(--fonteCorpo);
+        }
+
+        .btn-modal:hover {
+            background-color: var(--hover-corPrincipal04); /* Cor do botão ao passar o mouse */
+        }

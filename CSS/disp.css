@@ -1,0 +1,111 @@
+#carga_hora_semanal {
+    border-left: 2px solid var(--cinza);
+    padding-left: 5px;
+}
+
+.carga-horaria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cont .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont .color#PO {
+    background: var(--sucess);
+}
+.cont .color#CE {
+    background: var(--danger);
+}
+.cont .color#DH {
+    background: var(--alert);
+}
+
+.option-disabled {
+    color: var(--cinza);
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+.tempo {
+    overflow: hidden;
+}
+
+.horario-select {
+    background: #fff;
+    border: 2px solid var(--cinza);
+    padding: 0 1rem;
+    border-radius: 2rem;
+}
+
+.select-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.availability-block {
+    width: 20%; /* Largura do bloquinho */
+    height: 55%; /* Altura do bloquinho */
+    display: block;
+    cursor: pointer; /* Cursor muda ao passar sobre o bloquinho */
+    border-radius: 50%; /* Arredondar os cantos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.availability-block.expanded {
+    width: 100%;
+    border: 2px solid white;
+    background-color: #ccc; /* Cor para quando expandido */
+    border-radius: 1rem;
+}
+
+#btn-pr {
+    border: 3px solid var(--sucess);
+    color: var(--sucess);
+}
+
+#btn-pr:hover {
+    background: var(--sucess);
+    color: var(--branco);
+}
+
+
+#btn-ce {
+    border: 3px solid var(--danger);
+    color: var(--danger);
+}
+#btn-ce:hover {
+    background: var(--danger);
+    color: var(--branco);
+}
+#btn-de {
+    border: 3px solid var(--alert);
+    color: var(--alert);
+}
+
+#btn-de:hover {
+    background: var(--alert);
+    color: var(--branco);
+}

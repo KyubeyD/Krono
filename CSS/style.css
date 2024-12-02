@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.cdnfonts.com/css/rubik');
+@import url('https://fonts.cdnfonts.com/css/jost-3');
+
+:root {
+    --corPrincipal01: #3955A0;
+    --corPrincipal02: #A033E3;
+    --corPrincipal03: #FFD43C;
+    --corPrincipal04: #F39F1B;
+    --sucess: #4CAF50;
+    --alert: #e49a23;
+    --danger: #D32F2F;
+    --notifier: #A033E3;
+    
+    --hover-corPrincipal01: #24376A;
+    --hover-corPrincipal02: #C361FF;
+    --hover-corPrincipal04: #C78216;
+    --light-corPrincipal01: #3954a0b2;
+    --light-corPrincipal02: #a033e3a1;
+    --branco: #f5f8ff;
+    --cinza: #e5e8f0;
+    --cinza-escuro: #acb0b9;
+    --preto: #03060f;
+    --light-preto: #03060f2d;
+    
+    --fonteTitulo: 'Rubik', sans-serif;
+    --fonteCorpo: 'Jost', sans-serif;
+}
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    background: var(--branco);
+}

@@ -1,0 +1,281 @@
+body {
+    background: linear-gradient(150deg, var(--corPrincipal01), var(--corPrincipal02));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background: transparent;
+    transition: .2s all ease-in-out;
+    z-index: 100;
+}
+
+.header .content-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .header.scrolled {
+    background: linear-gradient(150deg, var(--corPrincipal01), var(--corPrincipal02));
+    border-bottom: 3px solid var(--corPrincipal04);
+}
+
+main .header .logo {
+    width: 250px;
+}
+
+main .header .logo:hover {
+    cursor: pointer;
+}
+
+main .header .logo img {
+    width: 100%;
+}
+
+main .header .navegacao {
+    font-size: 22px;
+}
+
+main .header .navegacao ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+main .header .navegacao ul li a {
+    font-family: var(--fonteCorpo);
+    color: var(--branco);
+    font-weight: 300;
+    transition: .2s ease-in-out;
+}
+
+main .header .navegacao ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    background: var(--branco);
+    border-radius: 1.5rem;
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(3,6,15,1);
+    -moz-box-shadow: 0px 5px 15px -5px rgba(3,6,15,1);
+    box-shadow: 0px 5px 15px -5px rgba(3,6,15,1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.container .quadro {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(180deg, var(--corPrincipal03), var(--corPrincipal04));
+    padding: 1rem;
+    border-radius: 40% 40% 0 0;
+    -webkit-box-shadow: 10px 0px 20px -22px rgba(3,6,15,1);
+    -moz-box-shadow: 10px 0px 20px -22px rgba(3,6,15,1);
+    box-shadow: 10px 0px 20px -22px rgba(3,6,15,1);
+    font-family: var(--fonteTitulo);
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+
+.container .quadro .conteudo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.container .quadro .conteudo h1 {
+    font-size: 28px;
+}
+
+.container .quadro .conteudo .btn-cadastro {
+    border: 2px solid var(--branco);
+    width: 200px;
+    padding: 0.7rem 0;
+    border-radius: 1rem;
+    color: var(--branco);
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+
+.container .quadro .conteudo .btn-cadastro:hover {
+    background: var(--branco);
+    color: var(--corPrincipal04);
+    cursor: pointer;
+}
+
+.container .cadastro {
+    width: 80%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container .cadastro .form-cadastro {
+    width: 90%;
+    height: 60%;
+    font-family: var(--fonteTitulo);
+    color: var(--preto);
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container .cadastro .form-cadastro h1 {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 0.5rem;
+}
+
+.container .cadastro .form-cadastro .progress-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .cadastro .form-cadastro .progress-bar .circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--cinza);
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 18px;
+    color: var(--preto);
+    transition: 0.3s all ease-in-out;
+}
+
+.container .cadastro .form-cadastro .progress-bar .bar {
+    background: var(--cinza);
+    width: 100%;
+    height: 12px;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+.container .cadastro .form-cadastro .progress-bar .progress {
+    background: var(--corPrincipal04);
+    width: 10%;
+    height: 10px;
+    border-radius: 1rem;
+    position: absolute;
+    transition: 0.6s all ease-in-out;
+}
+
+.container .cadastro .form-cadastro .campos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container .cadastro .form-cadastro .campos .campo {
+    width: 100%;
+    background: var(--cinza);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+}
+
+.container .cadastro .form-cadastro .campos .dois-campos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .cadastro .form-cadastro .campos .dois-campos .campo {
+    width: 48%;
+}
+
+.container .cadastro .form-cadastro .campos .campo input {
+    background: none;
+    width: 100%;
+}
+
+.container .cadastro .form-cadastro .page-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .cadastro .form-cadastro .page-button .btn-page {
+    width: 48%;
+    background: var(--corPrincipal04);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--branco);
+    transition: .2s ease-in-out;
+}
+
+/* Estilos para quando o botão estiver desabilitado */
+.disabled {
+    background-color: #cccccc!important; /* Cor mais clara */
+    color: #666666!important;           /* Cor do texto mais escura */
+    cursor: not-allowed!important;      /* Cursor mostrando que não está clicável */
+}
+
+/* A transição suave entre estados */
+.btn-page {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+
+.container .cadastro .form-cadastro .page-button .btn-page:hover {
+    cursor: pointer;
+    background: #e49619;
+}
+
+
+.logar {
+    width: 100%;
+    background: var(--corPrincipal04);
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--branco);
+    transition: .2s ease-in-out;
+}
+
+.logar:hover {
+    cursor: pointer;
+    background: #e49619;
+}

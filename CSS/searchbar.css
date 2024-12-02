@@ -1,0 +1,38 @@
+.search-container {
+    background: var(--cinza);
+    width: 40%;
+    padding: 0 1.5rem;
+}
+
+.search-container input {
+    background: none;
+    font-size: 18px;
+    font-family: var(--fonteTitulo);
+    width: 100%;
+}
+
+.suggestions {
+    width: 39%;   
+    position: absolute;
+    top: 73px; /* Ajuste a posição conforme necessário */
+    left: 15px;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-radius: 0 0 24px 24px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Oculta inicialmente */
+    font-family: var(--fonteTitulo);
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}

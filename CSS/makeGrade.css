@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(150deg, var(--corPrincipal01), var(--corPrincipal02));  
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grade {
+    background: var(--branco);
+    width: 90%;
+    height: 88vh;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.btn-make-modal {
+    border: 3px solid var(--corPrincipal04);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--corPrincipal04);
+    font-size: 22px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title a {
+    color: var(--corPrincipal01);
+}
+
+.title a i {
+    font-size: 30px;
+}
+
+.btn-make-modal:hover {
+    background: var(--corPrincipal04);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.btn-hidden {
+    display: none;
+}
+
+.body-content-cargah {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+#tabelaDiscipllinas {
+    overflow-y: scroll;
+}

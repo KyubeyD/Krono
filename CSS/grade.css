@@ -1,0 +1,356 @@
+.content-main {
+    display: flex;
+    justify-content: space-between;
+    height: 86%;
+}
+
+.content-cargah {
+    width: 17%;
+    height: 100%;
+    font-family: var(--fonteTitulo);
+    border: 2px solid var(--cinza);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.content-cargah .head-content-cargah {
+    background: var(--corPrincipal02);
+    padding: 1rem;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.content-cargah .head-content-cargah h1 {
+    color: var(--branco);
+    font-size: 1.4rem;
+}
+
+.content-cargah table {
+    padding: 1rem;
+    width: 100%;
+    font-size: 18px;
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-collapse: separate;
+    border-spacing: 0 1.5rem;
+    margin-top: -1.5rem;
+}
+
+.content-grade {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.content-grade.form {
+    height: 75%;
+    border-bottom: 2px solid var(--cinza);
+}
+
+.content-grade.form.make {
+    border: 2px solid var(--cinza);
+    width: 65%;
+    height: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cinza); /* Cor do fundo da barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-preto); /* Cor do polegar (parte que você arrasta) */
+    border-radius: 5px; /* Arredondamento do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cinza-escuro); /* Cor do polegar quando em hover */
+}
+
+.form-grade {
+    width: 100%;
+    height: 80%;
+}
+
+.grade {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonteTitulo);
+    border-spacing: 0.5rem;
+}
+
+.tempo {
+    width: 60px;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    -moz-box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    box-shadow: 0px 0px 8px -3px rgba(3,6,15,1);
+    border-radius: 0.5rem;
+    color: var(--preto);
+    background: #fff;
+    transition: .2s all ease-in-out;
+    
+}
+
+.tempo.disponivel {
+    background-color: #90ee90; /* Verde claro */
+    color: #000;
+    font-weight: bold;
+}
+
+.tempo.input-tempo {
+    transition: .2s all ease-in-out;
+}
+
+.tempo.selected-time {
+    background: var(--corPrincipal01);
+    color: var(--branco);
+}
+
+.horario-select {
+    width: 70%;
+    height: 70%;
+    background: none;
+    font-family: var(--fonteTitulo);
+    color: var(--preto);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.disciplina-grade {
+    font-weight: 500;
+}
+
+.disciplina-grade, .professor-grade {
+    transition: .2s ease-in-out;
+}
+
+.professor-grade:hover, .disciplina-grade:hover {
+    cursor: pointer;
+    color: var(--danger);
+}
+
+.professor-grade.view:hover, .disciplina-grade.view:hover {
+    color: var(--preto);
+    cursor: auto;
+}
+
+.input-tempo input {
+    display: none;
+}
+
+
+.dia_semana {
+    font-weight: 500;
+    background: var(--corPrincipal02);
+    color: var(--branco);
+}
+
+.content {
+    position: relative;
+}
+
+.viewDispBtn {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    border: 2px solid var(--cinza-escuro);
+}
+
+.viewDispBtn:hover {
+    background: var(--corPrincipal02);
+    color: var(--branco);
+    border-color: var(--corPrincipal02);
+}
+
+.head-crud {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -0.5rem;
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal01);
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--cinza);
+}
+
+.head-crud .add-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.head-crud .add-user:hover {
+    cursor: pointer;
+}
+
+.head-crud .add-user span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.head-crud .add-user span:hover {
+    text-decoration: underline;
+}
+
+.head-crud .add-user i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--corPrincipal01);
+    border-radius: 50%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn-grade {
+    padding: 1rem 4rem;
+    background: var(--corPrincipal01);
+    color: var(--branco); 
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+    position: fixed;
+    bottom: 4rem;
+    right: 3.1rem;
+    font-family: var(--fonteTitulo);
+}
+
+.btn-make {
+    padding: 1rem 4rem;
+    background: var(--corPrincipal01);
+    color: var(--branco); 
+    border-radius: 1rem;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+    position: fixed;
+    bottom: 5rem;
+    right: 9.5rem;
+    font-family: var(--fonteTitulo);
+}
+
+.btn-grade:hover {
+    background: var(--hover-corPrincipal01);
+    cursor: pointer;
+}
+
+.btn-make:hover {
+    background: var(--hover-corPrincipal01);
+    cursor: pointer;
+}
+
+
+.grade .linhas .tempo {
+    opacity: 0; /* Esconde inicialmente */
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.grade .linhas:nth-child(1) .tempo {
+    animation-delay: 0.1s;
+}
+
+.grade .linhas:nth-child(2) .tempo {
+    animation-delay: 0.2s;
+}
+.grade .linhas:nth-child(3) .tempo {
+    animation-delay: 0.3s;
+}
+.grade .linhas:nth-child(4) .tempo {
+    animation-delay: 0.4s;
+}
+.grade .linhas:nth-child(5) .tempo {
+    animation-delay: 0.5s;
+}
+.grade .linhas:nth-child(6) .tempo {
+    animation-delay: 0.6s;
+}
+.grade .linhas:nth-child(7) .tempo {
+    animation-delay: 0.7s;
+}
+.grade .linhas:nth-child(8) .tempo {
+    animation-delay: 0.8s;
+}
+.grade .linhas:nth-child(8) .tempo {
+    animation-delay: 0.8s;
+}
+.grade .linhas:nth-child(9) .tempo {
+    animation-delay: 0.9s;
+}
+.grade .linhas:nth-child(10) .tempo {
+    animation-delay: 1s;
+}
+.grade .linhas:nth-child(11) .tempo {
+    animation-delay: 1.1s;
+}
+.grade .linhas:nth-child(12) .tempo {
+    animation-delay: 1.2s;
+}
+.grade .linhas:nth-child(13) .tempo {
+    animation-delay: 1.3s;
+}
+.grade .linhas:nth-child(14) .tempo {
+    animation-delay: 1.4s;
+}
+.grade .linhas:nth-child(15) .tempo {
+    animation-delay: 1.5s;
+}
+
+.select-emissao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.select-emissao label {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.select-emissao .select {
+    width: 200px;
+    height: 30px;
+    background: var(--cinza);
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.select-emissao .select:hover {
+    background: var(--cinza-escuro);
+}
+
+.select-emissao .select .emissao {
+    cursor: pointer;
+    appearance: none; /* Padrão */
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: var(--fonteTitulo);
+    background: none;
+    width: 100%;
+}
